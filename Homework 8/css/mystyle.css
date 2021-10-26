@@ -1,0 +1,44 @@
+.title{
+	font-style: oblique;
+	font-family: cursive;
+	font-weight: 400;
+	font-size: x-large;
+	border-inline-color: rgb(17, 17, 104); 
+}
+
+body{
+	background-color: rgb(255, 228, 196);
+	}
+
+span{
+	color: rgb(163, 189, 238);
+	background-color: rebeccapurple;
+}
+
+font{
+	color: rgb(89, 66, 192);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.image{
+	background-image: url("./images/pavement.jpg");
+}
+
+.subheading{
+	color:rgb(13, 48, 59)
+
+}
+
+.content{
+	color: black;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: large;
+}
+#yellowlink{
+	outline-color: firebrick;
+	color: greenyellow;
+}
+
+#purple{
+	color:indigo;
+}

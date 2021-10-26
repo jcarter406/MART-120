@@ -1,0 +1,62 @@
+<html>
+    <title>ContactPage</title>
+
+   <head>
+   <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+   <script>
+       function completeForm()
+       {
+           var firstName = document.getElementById("fName").value;
+           if(firstName == "")
+          {
+            document.getElementById("fName").style.background = "red";
+            document.getElementById("fName").focus();
+                                 
+          } 
+           var lastName = document.getElementById("lName").value;
+           if(lastName == "")
+          {
+            document.getElementById("lName").style.background = "red";
+            document.getElementById("lName").focus();
+           
+          } 
+          var email = document.getElementById("email").value;
+           if(email == "")
+          {
+            document.getElementById("email").style.background = "red";
+            document.getElementById("email").focus();
+        
+          }
+                     
+       }
+
+    </script>
+    </head>
+
+    <body>
+    
+        <h1>Contact Information</h1>    
+        <p></p>
+            
+        <p><h3 class="subheading">Please complete this form</h3></p>
+           
+            <form action="">
+                First Name: <input type="text" required id="fName"><br><br>
+                Last Name: <input type="text" required id="lName"><br><br>
+                Email: <input type="email" requried id="email"><br><br>
+                <button id="mySubmit" onclick="completeForm();">Submit</button>
+            </form><br>
+        <p><form ... onsubmit="return checkForm(this);">
+            <input type="checkbox" required name="terms" id="terms">I accept the <u>Terms and Conditions</u><br>
+            <input type="submit"><br>
+            </form>
+            <br>    
+       
+
+        <p><h2><a href="Homepage.html">Homepage</a> </h2>
+            <h2><a href="StoryPage.html">StoryPage</a></h2>
+            <h2><a href="MathGame.html">Math Game</a></h2>
+        </p>
+    </body>
+
+</html>

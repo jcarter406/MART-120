@@ -1,0 +1,86 @@
+<html>
+    <title>MathGame</title> 
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+        <script>
+            var key;
+            var number1;
+            var number2;
+            var number3;
+
+            function printQuestion() {
+                number1 = Math.floor(Math.random() * 10);
+                number2 = Math.floor(Math.random() * 10);
+                number3 = Math.floor(Math.random() * 10);
+                key = (number1 + number2) * number3;
+                document.getElementById("theQuestion").innerHTML = "What is (" + number1 + "+" + number2 +")" + "*" + number3 + "?";
+            }
+
+            function checkAnswer() {
+                var answer = document.getElementById("txtAnswer").value;
+                if (answer == key) {
+                    document.getElementById("finalResult").innerHTML = "Great!";
+                    printQuestion();
+                } else {
+                    document.getElementById("finalResult").innerHTML = "Almost - try again";
+                }
+            }
+            var score=0
+            function totalScore() {
+                if (answer = key) {
+                    score = score + 1
+                    document.getElementById("totalScore").innerHTML = score;
+                } else {
+                    score = score + 0
+                }
+            }
+            function runGame() {
+                for (var i = 1; i < 3; i++) {
+                document.getElementById("message").innerHTML += "<h" + i + ">It is game time!!</h" + i +"></p>";
+                }
+                printQuestion();
+            }
+            runGame();
+        </script>
+    </head>
+
+    <body onload="runGame();">
+        <H1>Try Your Math Skills</H1>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <div id="message"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr size="1">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="theQuestion"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Your answer</td>
+                <td><input type="text" id="txtAnswer"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="checkAnswer();">Submit</button></td>
+            </tr>
+        </table>
+        <div id="finalResult"></div>
+        <br>
+        Your total score:
+        <input id="totalScore">
+        <p>
+        <br>
+        <h3><a href="Homepage.html">Homepage</a> </h3>
+        <h3><a href="StoryPage.html">Story Page</a></h3>    
+        <h3><a href="ContactPage.html">Contact Us</a></h3>
+        </p>
+    </body>
+
+</html>
