@@ -65,6 +65,7 @@ function draw() {
        circle(300, 213, 9);
        circle(340, 213, 9);
 
+       //lips and nose  add lines and points here 
        strokeWeight(3);
        line(320, 225, 330, 250);
        point(321, 253);
@@ -75,8 +76,6 @@ function draw() {
        line(285, 265, 300, 275);
        line(340, 275, 355, 265);
 
-
-       //lips and nose  add lines and points here
 
        //kitten face
         fill(0, 175, 80);
