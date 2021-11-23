@@ -67,7 +67,6 @@ function draw() {
         playerMovement();
 
         //create obstacles by names
-        //aball
         createAball();
         createBball();
         createCball();
